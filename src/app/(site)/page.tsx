@@ -1,10 +1,4 @@
-
-
-
-import { getPageBySlug } from "./lib/worpress.js";
-import parse from "html-react-parser";
-
-export default function LandingPage() {
+export default function Home() {
   return (
     <main className="container mx-auto px-4 py-12">
       <section className="text-center max-w-3xl mx-auto">
@@ -22,3 +16,5 @@ export default function LandingPage() {
     </main>
   );
 }
+
+
