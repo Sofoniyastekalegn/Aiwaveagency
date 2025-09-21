@@ -24,7 +24,7 @@ export default function Conversions() {
     const [text, setText] = useState<Conversions[]>([]);
 
     const [loading, setloading] = useState(true);
-    const [conversions, set]
+    const [conversions, setconvestions] = useState(true);
 
     useEffect(() => {
         async function fetchCalls() {
@@ -52,11 +52,10 @@ return (
       <section className="lg:col-span-3 bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-4">Recent Calls</h2>
         <ul>
-          {calls.map(call => (
-            <li key={call.id} className="border-b py-4">
-              <p>Caller: {call.caller_id}</p>
-              <p>Duration: {call.duration}s</p>
-              <p>Transcript: {call.transcript.substring(0, 100)}...</p>
+          {calls.map(text.id} className="border-b py-4">
+              <p>Caller: {text.caller_id}</p>
+              <p>Duration: {text.duration}s</p>
+              <p>Transcript: {text.transcript.substring(0, 100)}...</p>
             </li>
           ))}
         </ul>
